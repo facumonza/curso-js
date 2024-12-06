@@ -1,0 +1,210 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8b762;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 600px; /* Mayor ancho */
+    margin: 0 auto; /* Centrar el contenido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .libreta {
+    background-color: #faae35;
+    padding: 25px; /* Más espacio interno */
+    border-radius: 10px;
+    text-align: center;
+    width: 100%; /* Ajuste dinámico */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+  }
+  
+  /* Imagen de carga */
+  .imagen-carga {
+    position: relative;
+    width: 120px; /* Tamaño aumentado */
+    height: 120px;
+    border-radius: 50%;
+    background-color: #eee; /* Gris claro */
+    margin: 10px auto;
+    overflow: hidden;
+    border: 2px dashed #ccc; /* Borde punteado */
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .imagen-carga:hover {
+    background-color: #f9a825; /* Fondo amarillo */
+    border-color: #ff5722; /* Borde naranja */
+  }
+  
+  .imagen-carga img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Inputs (Nombre, Edad, Raza) */
+  .datos-mascota {
+    display: flex;
+    gap: 15px; /* Más separación entre campos */
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .datos-mascota input {
+    padding: 10px;
+    width: 120px; /* Más ancho */
+    border: 2px solid #ccc; /* Gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #fff; /* Fondo blanco */
+    font-size: 14px;
+    color: #333; /* Texto gris oscuro */
+    transition: all 0.3s ease;
+  }
+  
+  .datos-mascota input:focus {
+    border-color: #f9a825; /* Borde amarillo al enfocarse */
+    box-shadow: 0 0 8px rgba(249, 168, 37, 0.5); /* Sombra */
+    outline: none;
+  }
+  
+  .datos-mascota input::placeholder {
+    font-style: italic; /* Estilo para el placeholder */
+    color: #aaa; /* Placeholder gris claro */
+  }
+  
+  /* Tabla de datos */
+  .tabla-datos {
+    margin-top: 20px;
+  }
+  
+  .tabla-datos table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden;
+    border: 1px solid #ddd; /* Línea sutil alrededor */
+  }
+  
+  .tabla-datos th {
+    background-color: #555; /* Fondo oscuro para encabezados */
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+    text-transform: uppercase; /* Texto en mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+  }
+  
+  .tabla-datos td {
+    padding: 12px;
+    color: #333; /* Texto gris oscuro */
+    text-align: center;
+  }
+  
+  .tabla-datos tr:nth-child(even) {
+    background-color: #e4e3e3; /* Fondo gris claro */
+  }
+  
+  .tabla-datos tr:nth-child(odd) {
+    background-color: #fff; /* Fondo blanco */
+  }
+  
+  .tabla-datos tr:hover {
+    background-color: #c8e2f5; /* Azul claro para contraste */
+    color: #1976d2; /* Texto azul */
+    cursor: pointer;
+  }
+  
+  
+  .icono-flecha {
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #1976d2; /* Azul claro */
+    vertical-align: middle;
+  }
+  
+  .icono-flecha:hover {
+    color: #0d47a1; /* Azul más intenso en hover */
+  }
+  
+  
+  /* Botones */
+  .btn {
+    background-color: #1976d2; /* Azul sólido */
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #1565c0; /* Azul más oscuro en hover */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+  }
+  
+  
+  .btn-cerrar {
+    background-color: #757575; /* Botón gris */
+  }
+  
+  .btn-cerrar:hover {
+    background-color: #616161; /* Gris más oscuro */
+  }
+  
+  /* Pop-up */
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .popup-contenido {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center;
+    width: 400px; /* Más ancho */
+  }
+  
+  .popup input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%; /* Más espacio */
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  .popup input:focus {
+    border-color: #f9a825;
+    outline: none;
+  }
+  
+  .oculto {
+    display: none;
+  }
+  
